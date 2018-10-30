@@ -90,7 +90,7 @@ gulp.task("images", () => {
         .pipe(gulp.dest(path.build.img));
 });
 
-gulp.task("images:build", () => {
+gulp.task("images:opti", () => {
     return gulp.src(path.src.img)
         .pipe(imagemin([
             imagemin.optipng({ optimizationLevel: 3 }),
@@ -98,7 +98,7 @@ gulp.task("images:build", () => {
             imagemin.svgo()
         ]))
         .pipe(rename({ dirname: '' }))
-        .pipe(gulp.dest(path.build.img));
+        .pipe(gulp.dest("./src/static/img/"));
 });
 
 gulp.task("images:webp", () => {
@@ -131,7 +131,7 @@ gulp.task("build", function (done) {
         "clean",
         "fonts",
         "images:webp",
-        "images:build",
+        "images",
         "script:build",
         "style:build",
         "html",
