@@ -19,14 +19,21 @@ const path = {
         html: "./src/*.html",
         style: "./src/main.css",
         js: "./src/blocks/**/*.js",
-        img: "./src/static/img/**/*.{png,jpg,svg}",
+        img: {
+            copy: "./src/static/img/**/*.{png,jpg,svg,webp}",
+            opti: "./src/static/img/**/*.{png,jpg,svg}",
+            webp: "./src/static/img/**/*.{png,jpg}"
+        },
         fonts: './src/static/fonts/**/*.{woff,woff2}'
     },
     build: {
         html: "build/",
         style: "build/css/",
         js: "build/js",
-        img: "build/img",
+        img: {
+            build: "build/img",
+            copy: "./src/static/img/"
+        },
         fonts: "build/fonts/"
     },
     clean: './build'
@@ -85,27 +92,27 @@ gulp.task('script:build', () => {
 });
 
 gulp.task("images", () => {
-    return gulp.src(path.src.img)
+    return gulp.src(path.src.img.copy)
         .pipe(rename({ dirname: '' }))
-        .pipe(gulp.dest(path.build.img));
+        .pipe(gulp.dest(path.build.img.build));
 });
 
 gulp.task("images:opti", () => {
-    return gulp.src(path.src.img)
+    return gulp.src(path.src.img.opti)
         .pipe(imagemin([
             imagemin.optipng({ optimizationLevel: 3 }),
             imagemin.jpegtran({ progressive: true }),
             imagemin.svgo()
         ]))
         .pipe(rename({ dirname: '' }))
-        .pipe(gulp.dest("./src/static/img/"));
+        .pipe(gulp.dest(path.build.img.copy));
 });
 
 gulp.task("images:webp", () => {
-    return gulp.src(path.src.img)
+    return gulp.src(path.src.img.webp)
         .pipe(webp())
         .pipe(rename({ dirname: '' }))
-        .pipe(gulp.dest(path.build.img));
+        .pipe(gulp.dest(path.build.img.copy));
 });
 
 gulp.task("fonts", () => {
@@ -117,7 +124,6 @@ gulp.task("default", function (done) {
     run(
         "clean",
         "fonts",
-        "images:webp",
         "images",
         "script",
         "style",
@@ -130,7 +136,6 @@ gulp.task("build", function (done) {
     run(
         "clean",
         "fonts",
-        "images:webp",
         "images",
         "script:build",
         "style:build",
