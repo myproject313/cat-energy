@@ -1,3 +1,17 @@
 .section-header__content {
-    padding-top: 20px; 
+    position: relative;
+    padding: 20px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 271px;
+        left: 50%;
+        bottom: 55px; 
+        margin-left: -140px;
+        background-image: url("../img/index-can-small.png");
+        background-repeat: no-repeat;
+        background-position: 0 center;
+        background-size: 280px 271px;
+    }
 }
