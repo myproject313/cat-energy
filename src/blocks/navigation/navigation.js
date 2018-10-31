@@ -1,9 +1,9 @@
 (function () {
-    let noJs = document.querySelector("body");
-    let navigationButton = document.querySelector(".navigation__button");
-    let navigationSection = document.querySelector(".navigation");
+    var noJs = document.querySelector("body");
+    var navigationButton = document.querySelector(".navigation__button");
+    var navigationSection = document.querySelector(".navigation");
     noJs.classList.remove("no-js");
-    navigationButton.addEventListener("click", (ev) => {
+    navigationButton.addEventListener("click",  function(ev) {
         ev.preventDefault();
         navigationSection.classList.toggle("opened");
     });
