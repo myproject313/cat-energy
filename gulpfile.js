@@ -17,7 +17,7 @@ const browserSync = require('browser-sync').create();
 const path = {
     src: {
         html: "./src/*.html",
-        style: "./src/main.css",
+        style: "./src/main.scss",
         js: "./src/blocks/**/*.js",
         img: {
             copy: "./src/static/img/**/*.{png,jpg,svg,webp}",
@@ -147,6 +147,6 @@ gulp.task("build", function (done) {
 gulp.task('watch', function () {
     browserSync.init({ server: path.build.html });
     gulp.watch(path.src.html, ["html"]);
-    gulp.watch("../src/blocks/**/*.scss", ["style"]);
+    gulp.watch("./src/blocks/**/*.scss", ["style"]);
     gulp.watch(path.src.js, ["script"]);
 });
