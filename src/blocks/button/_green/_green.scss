@@ -1,0 +1,7 @@
+.button_green {
+    background-color: $button-green;
+    &:hover,
+    &:focus {
+        background-color: $button-green-hover;
+    }
+}
