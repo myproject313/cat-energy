@@ -1,8 +1,13 @@
 .navigation__list {
     @include list-reset();
+    display: none;
 }
 
-.navigation__list_hidden {
-    display: none;
+.no-js .navigation__list {
+    display: block;
+}
+
+.opened .navigation__list {
+    display: block;
 }
 
