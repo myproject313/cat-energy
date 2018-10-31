@@ -1,0 +1,18 @@
+.navigation__links {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: inherit;
+    color: $text-dark-dark;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    &:hover,
+    &:focus {
+        opacity: $opacity-60;
+    }
+    &:active {
+        opacity: $opacity-30;
+    }
+}
+
