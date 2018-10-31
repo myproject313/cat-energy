@@ -7,4 +7,12 @@
         ev.preventDefault();
         navigationSection.classList.toggle("opened");
     });
+    window.onkeydown = function( event ) {
+        if(navigationSection.classList.contains("opened")) {
+            if ( event.keyCode == 27 ) {
+                event.preventDefault();
+                navigationSection.classList.toggle("opened");
+            }
+        }
+    };
 })();
