@@ -1,0 +1,22 @@
+.section-header {
+    position: relative;
+    height: 305px;
+    background-color: #63a73a;
+    background-image: url("../img/index-background-small.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 320px 305px;
+    color: #fff;
+    text-align: center;
+}
+
+.section-header__caption {
+    margin-bottom: 10px;
+}
+
+.section-header__description {
+    text-transform: uppercase;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 300px;
+}
