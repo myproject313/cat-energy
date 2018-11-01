@@ -1,0 +1,32 @@
+.category-blocks__links {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: inherit;
+    color: $text-dark-light;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    &:active {
+        opacity: $opacity-30;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 95px;
+        width: 24px;
+        height: 11px;
+        background-image: url("../img/right-arrow-long.svg");
+        background-repeat: no-repeat;
+        background-size: 24px 11px;
+    }
+    &:hover::after,
+    &:focus::after {
+        width: 33px;
+        background-image: url("../img/right-arrow-verylong.svg");
+        background-size: 33px 11px;
+    }
+}
