@@ -1,0 +1,11 @@
+.category-blocks__items {
+    position: relative;
+    background-color: $page-bg-grey;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.category-blocks__items:last-child {
+    margin-bottom: 0;
+}
