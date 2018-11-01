@@ -7,6 +7,9 @@
     border: none;
     margin-right: -10px;
     background-color: transparent;
+    @media (min-width: $width-md) {
+        display: none;
+    }
 }
 
 .no-js .navigation__button {
