@@ -14,12 +14,18 @@
         background: none;
         height: auto;
     }
+    @media (min-width: $width-lg) {
+        min-height: 587px;
+    }
 }
 
 .section-header__caption {
     margin-bottom: 10px;
     @media (min-width: $width-md) {
         margin-bottom: 32px;
+    }
+    @media (min-width: $width-lg) {
+        margin-bottom: 35px;
     }
 }
 
@@ -31,5 +37,8 @@
     @media (min-width: $width-md) {
         margin-bottom: 40px;
         font-size: 20px;
+    }
+    @media (min-width: $width-lg) {
+        margin-bottom: 50px;
     }
 }
