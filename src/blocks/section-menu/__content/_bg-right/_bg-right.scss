@@ -1,0 +1,17 @@
+.section-menu__content_bg-right {
+    @media (min-width: $width-lg) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -40px;
+            width: 770px;
+            height: 696px;
+            background-image: url("../img/index-background-large.jpg");
+            background-repeat: no-repeat;
+            background-size: 770px 696px;
+            background-position: center;
+            z-index: -2;
+        }
+    }
+}
