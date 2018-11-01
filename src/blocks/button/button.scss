@@ -9,4 +9,8 @@
     &:active { 
         color: rgba(255, 255, 255, $opacity-30);
     }
+    @media (min-width: $width-md) {
+        font-size: 20px;
+        padding: 20px 0;
+    }
 }
