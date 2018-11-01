@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: 33px 38px;
     @media (min-width: $width-md) {
+        display: block;
         position: static;
         width: 175px;
         height: 70px;
