@@ -4,4 +4,7 @@
         border-top: none;
         margin: 0 15px;
     }
+    @media (min-width: $width-lg) {
+        margin: 0 20px;
+    }
 }
