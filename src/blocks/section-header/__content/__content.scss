@@ -28,4 +28,17 @@
             z-index: -1;
         }
     }
+    @media (min-width: $width-lg) {
+        padding: 110px 0;
+        &::before {
+            width: 552px;
+            height: 499px;
+            left: 472px;
+            top: 30px;
+            bottom: auto; 
+            background-image: url("../img/index-can-large.png");
+            background-size: 552px 499px;
+            z-index: -1;
+        }
+    }
 }
