@@ -1,4 +1,7 @@
 .section-menu {
     width: auto;
     min-height: 66px;
+    @media (min-width: $width-md) {
+        min-height: 110px;
+    }
 }
