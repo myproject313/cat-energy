@@ -7,4 +7,11 @@
     background-image: url("../img/logo-image-small.svg");
     background-repeat: no-repeat;
     background-size: 33px 38px;
+    @media (min-width: $width-md) {
+        position: static;
+        width: 175px;
+        height: 70px;
+        background-image: url("../img/logo-image-medium.svg");
+        background-size: 175px 70px;
+    }
 }
