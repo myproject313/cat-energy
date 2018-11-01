@@ -15,4 +15,10 @@
         background-image: url("../img/logo-image-medium.svg");
         background-size: 175px 70px;
     }
+    @media (min-width: $width-lg) {
+        width: 202px;
+        height: 60px;
+        background-image: url("../img/logo-image-large.svg");
+        background-size: 202px 60px;
+    }
 }
