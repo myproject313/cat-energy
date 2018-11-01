@@ -1,13 +1,22 @@
 .navigation__list {
     @include list-reset();
     display: none;
+    @media (min-width: $width-md) {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .no-js .navigation__list {
     display: block;
+    @media (min-width: $width-md) {
+        display: flex;
+    }
 }
 
 .opened .navigation__list {
     display: block;
+    @media (min-width: $width-md) {
+        display: flex;
+    }
 }
-
