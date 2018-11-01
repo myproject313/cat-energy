@@ -17,6 +17,9 @@
 
 .section-header__caption {
     margin-bottom: 10px;
+    @media (min-width: $width-md) {
+        margin-bottom: 32px;
+    }
 }
 
 .section-header__description {
@@ -24,4 +27,8 @@
     display: block;
     font-weight: 400;
     margin-bottom: 300px;
+    @media (min-width: $width-md) {
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
 }
