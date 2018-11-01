@@ -8,6 +8,11 @@
     background-size: 320px 305px;
     color: #fff;
     text-align: center;
+    @media (min-width: $width-md) {
+        text-align: left;
+        color: $text-dark-dark;
+        background: none;
+    }
 }
 
 .section-header__caption {
