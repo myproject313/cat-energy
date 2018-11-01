@@ -5,4 +5,7 @@
     background-image: url("../img/logo-text.svg");
     background-repeat: no-repeat;
     background-size: 101px 18px;
+    @media (min-width: $width-md) {
+        display: none;
+    }
 }
