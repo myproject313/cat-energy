@@ -2,4 +2,7 @@
     position: relative;
     margin: 0;
     padding: 3px 0 3px 80px;
+    @media (min-width: $width-md) {
+        padding: 115px 140px 0 0;
+    }
 }
