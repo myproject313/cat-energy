@@ -23,6 +23,13 @@
     }
     @media (min-width: $width-lg) {
         color: #fff;
+        &:hover,
+        &:focus {
+            color: rgba(255, 255, 255, $opacity-60);
+        }
+        &:active {
+            color: rgba(255, 255, 255, $opacity-30);
+        }
     }
 }
 
