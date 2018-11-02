@@ -8,8 +8,16 @@
         padding: 80px 270px 55px 60px;
         margin-bottom: 30px;   
     }
+    @media (min-width: $width-lg) {
+        max-width: 540px;
+        padding: 50px 50px 60px;
+        margin-bottom: 40px;   
+    }
 }
 
 .category-blocks__items:last-child {
-    margin-bottom: 0;
+    @media (max-width: 1299px) {
+        margin-bottom: 0;
+    }
 }
+
