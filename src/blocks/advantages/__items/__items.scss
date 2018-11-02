@@ -1,4 +1,23 @@
 .advantages__items {
+    position: relative;
     margin-bottom: 20px;
     min-height: 60px;
+    counter-increment: items; 
+    @media (min-width: $width-md) {
+        max-width: 324px;
+        min-height: 228px;
+        margin-bottom: 90px;
+        &::before {
+            content: counter(items);
+            position: absolute;
+            width: 324px;
+            height: 228px;
+            font-family: "Oswald", Arial, Helvetica, sans-serif;
+            color: $page-bg-grey;
+            font-size: 280px;
+            line-height: 200px;
+            text-align: center;
+            z-index: -1;
+        }
+    }
 }
