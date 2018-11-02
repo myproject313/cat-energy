@@ -16,4 +16,12 @@
         height: 115px;
         background-size: 270px 115px;
     }
+    @media (min-width: $width-lg) {
+        top: 69px;
+        left: 28px;
+        right: auto;
+        width: 135px;
+        height: 56px;
+        background-size: 135px 56px;
+    }
 }
