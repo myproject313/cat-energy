@@ -8,5 +8,12 @@
     background-image: url("../img/icon-weight-gain.svg");
     background-size: 67px 28px;
     background-repeat: no-repeat;
-
+    @media (min-width: $width-md) {
+        top: 137px;
+        left: auto;
+        right: 29px;
+        width: 270px;
+        height: 115px;
+        background-size: 270px 115px;
+    }
 }
