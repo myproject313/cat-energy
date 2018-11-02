@@ -1,3 +1,8 @@
 .category-blocks {
     @include list-reset();
+    @media (min-width: $width-lg) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+    }
 }
