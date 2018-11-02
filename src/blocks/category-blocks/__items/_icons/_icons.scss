@@ -14,4 +14,11 @@
         width: 200px;
         height: 200px;  
     }
+    @media (min-width: $width-lg) {
+        top: 55px;
+        left: 47px;
+        right: auto;
+        width: 100px;
+        height: 100px;  
+    }
 }
