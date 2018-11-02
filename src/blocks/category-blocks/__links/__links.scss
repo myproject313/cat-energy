@@ -22,11 +22,18 @@
         background-image: url("../img/right-arrow-long.svg");
         background-repeat: no-repeat;
         background-size: 24px 11px;
+        @media (min-width: $width-md) {
+            top: 7px;
+            left: 130px;
+        }
     }
     &:hover::after,
     &:focus::after {
         width: 33px;
         background-image: url("../img/right-arrow-verylong.svg");
         background-size: 33px 11px;
+    }
+    @media (min-width: $width-md) {
+        font-size: 20px;
     }
 }
