@@ -1,3 +1,6 @@
 .category {
     padding: 10px 0;
+    @media (min-width: $width-lg) {
+        padding-top: 80px;
+    }
 }
