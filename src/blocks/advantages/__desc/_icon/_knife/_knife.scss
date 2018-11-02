@@ -8,4 +8,8 @@
     background-image: url("../img/icon-advantage-knife.png");
     background-repeat: no-repeat;
     background-size: 50px 50px;
+    @media (min-width: $width-md) {
+        top: 15px;
+        left: 15px;
+    }
 }
