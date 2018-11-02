@@ -20,4 +20,15 @@
             z-index: -1;
         }
     }
+    @media (min-width: $width-lg) {
+        max-width: 245px;
+        margin-right: 80px;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        &::before {
+            width: 245px;
+            text-align: right;
+        }
+    }
 }
