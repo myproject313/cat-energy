@@ -6,3 +6,9 @@
         align-items: center;
     }
 }
+
+@media (min-width: $width-md) {
+    .alive-example__list-wrapper {
+        flex-wrap: wrap;
+    }
+}
