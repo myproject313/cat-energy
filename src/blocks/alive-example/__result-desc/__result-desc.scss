@@ -16,4 +16,7 @@
         bottom: -7px;
         font-size: 14px;
     }
+    @media (min-width: $width-lg) {
+        background-color: $page-bg-grey;
+    }
 }
