@@ -1,0 +1,15 @@
+.alive-example__llustration-toggle-switch {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: $button-green;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    transition: left 0.3s ease-out;
+}
+
+.toggle-switch .alive-example__llustration-toggle-switch {
+    left: 35px;
+    transition: left 0.3s ease-out;
+}
