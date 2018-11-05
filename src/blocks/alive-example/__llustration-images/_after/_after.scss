@@ -1,0 +1,15 @@
+.alive-example__llustration-images_after {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 240px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.toggle-switch .alive-example__llustration-images_after {
+    z-index: 1;
+    opacity: 1;
+}
+
