@@ -1,0 +1,12 @@
+.alive-example__llustration-images_before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 320px;
+    height: 240px;
+}
+
+.toggle-switch .alive-example__llustration-images_before {
+    z-index: -1;
+    opacity: 0;
+}
