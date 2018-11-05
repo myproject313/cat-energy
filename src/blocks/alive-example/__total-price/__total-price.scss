@@ -12,4 +12,9 @@
         text-align: right;
         line-height: 1.4em;
     }
+    @media (min-width: $width-lg) {
+        width: 438px;
+        text-align: center;
+    }
+
 }
