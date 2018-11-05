@@ -4,4 +4,8 @@
     font-family: Arial, Helvetica, sans-serif;
     color: $text-dark-light;
     line-height: 1.286em;
+    @media (min-width: $width-md) {
+        margin-bottom: 55px;
+        font-size: 16px;
+    }
 }
