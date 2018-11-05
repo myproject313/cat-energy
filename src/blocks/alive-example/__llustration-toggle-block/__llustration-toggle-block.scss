@@ -7,4 +7,12 @@
     box-sizing: border-box;
     margin: 0 20px;
     padding: 3px 5px;
+    @media (min-width: $width-md) {
+        position: relative;
+        width: 427px;
+        height: 6px;
+        background-color: #dcdcdc;
+        border: none;
+        padding: 0;
+    }
 }
