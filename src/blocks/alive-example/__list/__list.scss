@@ -1,0 +1,7 @@
+.alive-example__list {
+    @include list-reset();
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
