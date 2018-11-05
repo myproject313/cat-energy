@@ -4,4 +4,12 @@
     font: inherit;
     color: inherit;
     margin-bottom: 25px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    @media (min-width: $width-md) {
+        margin-bottom: 0;
+        font-size: 20px;
+        text-align: right;
+        line-height: 1.4em;
+    }
 }
