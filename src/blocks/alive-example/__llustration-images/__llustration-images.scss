@@ -2,4 +2,7 @@
     position: relative;
     height: 240px;
     margin-bottom: 35px;
+    @media (min-width: $width-md) { 
+        height: 517px;
+    }
 }
