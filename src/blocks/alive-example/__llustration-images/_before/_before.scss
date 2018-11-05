@@ -7,6 +7,15 @@
     z-index: 1;
     opacity: 1;
     transform: translateX(-50%);
+    background-image: url("../img/cat-before-small.png");
+    background-repeat: no-repeat;
+    background-size: 320px 240px;
+    @media (min-width: $width-md) { 
+        width: 690px;
+        height: 517px;
+        background-image: url("../img/cat-before-medium.png");
+        background-size: 690px 517px;
+    }
 }
 
 .toggle-switch .alive-example__llustration-images_before {
