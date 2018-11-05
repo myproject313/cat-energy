@@ -3,3 +3,9 @@
         display: block;
     }
 }
+
+@media (min-width: $width-lg) {
+    .alive-example__total-price_block {
+        display: inline;
+    }
+}
