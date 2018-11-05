@@ -18,12 +18,25 @@
             height: 462px;
         }
     }
+    @media (min-width: $width-lg) {
+        background-color: $page-bg-grey;
+        border-top: none;
+        &::before {
+            bottom: auto;
+            top: 0;
+            background-color: #fff;
+            height: 180px;
+        }
+    }
 }
 
 .alive-example__caption {
+    position: relative;
     margin-bottom: 30px;
+    z-index: 1;
     @media (min-width: $width-md) {
-       margin-bottom: 60px;
-       padding-top: 45px;
-    }
+        margin-bottom: 60px;
+        padding-top: 45px;
+        z-index: 1;
+    }    
 }
