@@ -1,0 +1,8 @@
+@media (min-width: $width-md) {
+    .alive-example__list-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
