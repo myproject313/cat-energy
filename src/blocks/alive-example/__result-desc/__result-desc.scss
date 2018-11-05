@@ -10,4 +10,10 @@
     font-size: 12px;
     line-height: 1.2em;
     background-color: $page-bg-grey;
+    @media (min-width: $width-md) {
+        width: 140px;
+        background-color: #fff;
+        bottom: -7px;
+        font-size: 14px;
+    }
 }
