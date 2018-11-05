@@ -17,4 +17,7 @@
     &:active {
         border-bottom: none;
     }
+    @media (min-width: $width-md) {
+       font-size: 20px;
+    }
 }
