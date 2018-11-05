@@ -7,4 +7,12 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    border-bottom: 1px dotted #bebebe;
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid #bebebe;
+    }
+    &:active {
+        border-bottom: none;
+    }
 }
