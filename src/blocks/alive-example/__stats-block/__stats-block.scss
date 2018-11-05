@@ -3,3 +3,10 @@
         margin-bottom: 50px;
     }
 }
+
+@media (min-width: $width-lg) { 
+    .alive-example__stats-block {
+        width: 438px;
+        margin-bottom: 0;
+    }
+}
