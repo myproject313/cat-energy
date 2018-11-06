@@ -1,0 +1,14 @@
+.social-list__links {
+    text-decoration: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    &:hover > .social-list__icons, 
+    &:focus > .social-list__icons {
+        fill: #80c158;
+        transition: fill 0.3s ease;
+    }
+    &:active {
+        opacity: $opacity-30;
+        transition: opacity 0.3s ease;
+    }
+}
