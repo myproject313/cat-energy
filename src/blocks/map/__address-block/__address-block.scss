@@ -4,4 +4,10 @@
     @media (min-width: $width-md) {
         padding: 60px 0 60px;
     }
+    @media (min-width: $width-lg) {
+        padding: 0;
+        position: absolute;
+        margin: 100px 0 0;
+        background-color: transparent;
+    }
 }
