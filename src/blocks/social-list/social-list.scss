@@ -8,4 +8,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media (min-width: $width-md) {
+        border-top: none;
+        border-bottom: none;
+        width: 130px;
+        margin-bottom: 0;
+        padding: 0;
+    }
 }
