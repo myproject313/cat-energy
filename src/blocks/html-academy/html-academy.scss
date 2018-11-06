@@ -15,4 +15,7 @@
         opacity: $opacity-30;
         transition: opacity 0.3s ease;
     }
+    @media (min-width: $width-md) {
+        width: 165px;
+    }
 }
