@@ -1,0 +1,14 @@
+.html-academy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    &:hover > .html-academy__logo,
+    &:focus > .html-academy__logo {
+        fill: $button-green;
+    }
+    &:active {
+        opacity: $opacity-30;
+    }
+}
