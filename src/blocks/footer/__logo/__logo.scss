@@ -8,4 +8,8 @@
     background-repeat: no-repeat;
     background-size: 128px 24px;
     margin-bottom: 30px;
+    @media (min-width: $width-md) {
+        margin: 0;
+        width: 130px;
+    }
 }
