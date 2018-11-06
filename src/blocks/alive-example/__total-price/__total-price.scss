@@ -6,11 +6,13 @@
     margin-bottom: 25px;
     line-height: 1.2em;
     text-transform: uppercase;
+    @media (min-width: 425px) {
+        font-size: 20px;
+        line-height: 1.4em;
+    }
     @media (min-width: $width-md) {
         margin-bottom: 0;
-        font-size: 20px;
         text-align: right;
-        line-height: 1.4em;
     }
     @media (min-width: $width-lg) {
         width: 438px;
